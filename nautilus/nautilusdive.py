@@ -20,7 +20,6 @@ if __name__ == '__main__':
     config = {}
     config['brokers'] = 'localhost:9092'
     config['topic'] = 'ht2'
-    config['partitions'] = 1
     p = NautilusDive(config)
     msg = '{"name":"Varun"}'
     p.send('k', msg)
